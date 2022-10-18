@@ -1,0 +1,95 @@
+uuid: 285846ec-e7af-44a3-a473-f929184a6c7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.account.body
+    - field.field.node.account.field_client
+    - node.type.account
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          967651ec-e57d-4499-94ce-5689be009781:
+            uuid: 967651ec-e57d-4499-94ce-5689be009781
+            region: content
+            configuration:
+              id: 'extra_field_block:node:account:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          f1ee7865-3ebe-48c2-94f2-41e793a06769:
+            uuid: f1ee7865-3ebe-48c2-94f2-41e793a06769
+            region: content
+            configuration:
+              id: 'field_block:node:account:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          503493d1-7330-418d-a8ad-fd341dac9611:
+            uuid: 503493d1-7330-418d-a8ad-fd341dac9611
+            region: content
+            configuration:
+              id: 'field_block:node:account:field_client'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.account.default
+targetEntityType: node
+bundle: account
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_client:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

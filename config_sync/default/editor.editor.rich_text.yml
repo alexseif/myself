@@ -1,0 +1,49 @@
+uuid: a7550dc3-ae35-4333-bf29-9dca43ef7a9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.rich_text
+  module:
+    - ckeditor5
+format: rich_text
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - heading
+      - bold
+      - italic
+      - underline
+      - strikethrough
+      - '|'
+      - link
+      - bulletedList
+      - numberedList
+      - '|'
+      - alignment
+      - removeFormat
+      - '|'
+      - sourceEditing
+      - code
+      - codeBlock
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
+    ckeditor5_list:
+      reversed: true
+      startIndex: true
+    ckeditor5_alignment:
+      enabled_alignments:
+        - left
+        - center
+        - right
+        - justify
+image_upload: {  }

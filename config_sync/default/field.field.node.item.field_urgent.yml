@@ -1,0 +1,23 @@
+uuid: 27e24e71-9768-48b0-9f1d-f9e43a681164
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_urgent
+    - node.type.item
+id: node.item.field_urgent
+field_name: field_urgent
+entity_type: node
+bundle: item
+label: Urgent
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Urgent
+  off_label: Normal
+field_type: boolean

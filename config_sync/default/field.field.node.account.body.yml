@@ -1,0 +1,23 @@
+uuid: a2a05723-77f7-4399-97cb-120c5d06eb6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.account
+  module:
+    - text
+id: node.account.body
+field_name: body
+entity_type: node
+bundle: account
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

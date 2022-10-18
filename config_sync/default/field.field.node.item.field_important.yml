@@ -1,0 +1,23 @@
+uuid: a5ed6c4d-96a6-439b-87c7-a410956842ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_important
+    - node.type.item
+id: node.item.field_important
+field_name: field_important
+entity_type: node
+bundle: item
+label: Important
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Important
+  off_label: Normal
+field_type: boolean

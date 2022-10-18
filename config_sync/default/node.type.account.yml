@@ -1,0 +1,11 @@
+uuid: 3dfc4958-cd2d-4f9d-b6ee-6bb0a7fd3f26
+langcode: en
+status: true
+dependencies: {  }
+name: Account
+type: account
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

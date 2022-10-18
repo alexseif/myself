@@ -1,0 +1,101 @@
+uuid: 06077a98-b020-439f-b00c-2b52e474cd6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.item.body
+    - field.field.node.item.field_important
+    - field.field.node.item.field_urgent
+    - field.field.node.item.field_weight
+    - node.type.item
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+    - weight
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.item.default
+targetEntityType: node
+bundle: item
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_important:
+    type: boolean_checkbox
+    weight: 123
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_urgent:
+    type: boolean_checkbox
+    weight: 124
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_weight:
+    type: weight_selector
+    weight: 122
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,59 @@
+uuid: 77dca16d-7ef5-434a-a938-06a334e204f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.item.body
+    - field.field.node.item.field_important
+    - field.field.node.item.field_urgent
+    - field.field.node.item.field_weight
+    - node.type.item
+  module:
+    - text
+    - user
+    - weight
+id: node.item.default
+targetEntityType: node
+bundle: item
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_important:
+    type: boolean
+    label: inline
+    settings:
+      format: yes-no
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_urgent:
+    type: boolean
+    label: inline
+    settings:
+      format: yes-no
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_weight:
+    type: default_weight
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden: {  }

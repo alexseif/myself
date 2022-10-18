@@ -1,0 +1,29 @@
+uuid: 2a20f8b3-706d-49d2-8af1-e5cf9e4bc87b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_account
+    - node.type.account
+    - node.type.project
+id: node.project.field_account
+field_name: field_account
+entity_type: node
+bundle: project
+label: account
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      account: account
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

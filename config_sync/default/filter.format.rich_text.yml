@@ -1,0 +1,17 @@
+uuid: a8817c99-fc45-4c11-be0a-570b5fbf76f0
+langcode: en
+status: true
+dependencies: {  }
+name: 'Rich Text'
+format: rich_text
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: ''
+      filter_html_help: true
+      filter_html_nofollow: false

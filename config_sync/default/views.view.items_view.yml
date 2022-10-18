@@ -108,19 +108,6 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        field_important_value:
-          id: field_important_value
-          table: node__field_important
-          field: field_important_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: standard
-          order: DESC
-          expose:
-            label: Important
-            field_identifier: field_important_value
-          exposed: true
         field_urgent_value:
           id: field_urgent_value
           table: node__field_urgent
@@ -133,6 +120,19 @@ display:
           expose:
             label: 'Urgent '
             field_identifier: field_urgent_value
+          exposed: true
+        field_important_value:
+          id: field_important_value
+          table: node__field_important
+          field: field_important_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: DESC
+          expose:
+            label: Important
+            field_identifier: field_important_value
           exposed: true
         field_weight_value:
           id: field_weight_value

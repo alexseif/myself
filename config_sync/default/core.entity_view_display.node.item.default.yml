@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.item.body
+    - field.field.node.item.field_completed
+    - field.field.node.item.field_completed_at
     - field.field.node.item.field_important
     - field.field.node.item.field_urgent
     - field.field.node.item.field_weight
@@ -23,6 +25,26 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_completed:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_completed_at:
+    type: timestamp
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    weight: 6
     region: content
   field_important:
     type: boolean

@@ -25,6 +25,7 @@
         "drupal/libraries": "^3.0@beta",
         "drupal/panels": "^4.6",
         "drupal/weight": "^3.3",
+        "drupal/workflows_field": "^2.0@alpha",
         "drush/drush": "^11.2",
         "oomphinc/composer-installers-extender": "^2.0"
     }

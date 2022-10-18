@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.item.body
+    - field.field.node.item.field_completed
+    - field.field.node.item.field_completed_at
     - field.field.node.item.field_important
     - field.field.node.item.field_urgent
     - field.field.node.item.field_weight
@@ -36,6 +38,19 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_completed:
+    type: boolean_checkbox
+    weight: 125
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_completed_at:
+    type: datetime_timestamp
+    weight: 126
     region: content
     settings: {  }
     third_party_settings: {  }

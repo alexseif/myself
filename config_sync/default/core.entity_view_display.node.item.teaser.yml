@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.item.body
+    - field.field.node.item.field_completed
+    - field.field.node.item.field_completed_at
     - field.field.node.item.field_important
     - field.field.node.item.field_urgent
     - field.field.node.item.field_weight
@@ -31,6 +33,8 @@ content:
     weight: 100
     region: content
 hidden:
+  field_completed: true
+  field_completed_at: true
   field_important: true
   field_urgent: true
   field_weight: true

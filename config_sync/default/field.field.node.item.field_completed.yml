@@ -1,0 +1,23 @@
+uuid: 911b36bd-2d67-4d7a-bca8-09747000a758
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_completed
+    - node.type.item
+id: node.item.field_completed
+field_name: field_completed
+entity_type: node
+bundle: item
+label: Completed
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Completed
+  off_label: 'Not Completed'
+field_type: boolean

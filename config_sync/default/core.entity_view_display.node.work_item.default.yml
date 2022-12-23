@@ -1,0 +1,38 @@
+uuid: 1d28fc80-9c15-40c3-a86c-58943fea6ca7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.work_item.body
+    - field.field.node.work_item.field_est
+    - node.type.work_item
+  module:
+    - text
+    - user
+id: node.work_item.default
+targetEntityType: node
+bundle: work_item
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_est:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

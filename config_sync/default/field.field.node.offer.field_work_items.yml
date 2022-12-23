@@ -1,0 +1,29 @@
+uuid: 64585e19-99a2-47ca-b38b-428b35cbc258
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_work_items
+    - node.type.offer
+    - node.type.work_item
+id: node.offer.field_work_items
+field_name: field_work_items
+entity_type: node
+bundle: offer
+label: 'Work items'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      work_item: work_item
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
